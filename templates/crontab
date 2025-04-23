@@ -1,2 +1,2 @@
- root cd /usr/src/app && sh -c 'yarn $NPM_COMMAND' >> /var/log/cron.log 2>&1
+root cd ${APP_DIR} && sh -c 'yarn $NPM_COMMAND' >> /var/log/cron.log 2>&1
 # An empty line is required
