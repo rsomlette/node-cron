@@ -1,10 +1,6 @@
 #!/bin/bash
 echo "Starting node-cron"
 
-
-cp /etc/cron.daily/logrotate /etc/cron.hourly/logrotate
-
-
 if [ -z "$TASK_SCHEDULE" ]; then
     TASK_SCHEDULE='* * * * *'
 fi
